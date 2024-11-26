@@ -1,0 +1,54 @@
+body{
+    background-image: url(imagens/folha.jpg);
+    background-size: cover;
+    display: flex; /* Ativa o layout flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa 100% da altura da janela */
+}
+
+.formCenter {
+    width: 480px; /* Largura proporcional à tela */
+    height: 650px; /* Espaçamento interno proporcional */
+    background-color: rgb(31, 31, 31, 0.8); /* Cor de fundo */
+    border-radius: 20px; 
+      
+}
+
+.link {
+    width: 95%;
+    max-width: 480px;
+    height: 55px;
+    display: flex; 
+    background-color: rgba(15, 15, 15, 0.8); 
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    text-indent: 16px;
+    color: white;
+}
+
+.link:hover {
+    background-color: rgba(122, 122, 122, 0.5);
+    width: 97%;
+    font-size: 23px;
+}
+
+#textoTitulo {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.texto {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
