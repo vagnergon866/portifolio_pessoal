@@ -1,37 +1,46 @@
 body{
+    /* Define a imagem de fundo e ajusta para para que cubra toda a tela */
     background-image: url(imagens/folha.jpg);
     background-size: cover;
-    display: flex; /* Ativa o layout flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Ocupa 100% da altura da janela */
+    display: flex; 
+
+    /* Centraliza o conteúdo na vertical e horizontalmente */
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
 }
 
 .formCenter {
-    width: 480px; /* Largura proporcional à tela */
-    height: 650px; /* Espaçamento interno proporcional */
-    background-color: rgb(31, 31, 31, 0.8); /* Cor de fundo */
-    border-radius: 20px; 
-      
+    /* Define o tamanho fixo do formulário */
+    width: 480px; 
+    height: 650px; 
+
+    /* Cor de fundo com tranparencia e bordas arredondadas */
+    background-color: rgb(31, 31, 31, 0.8); 
+    border-radius: 20px;  
 }
 
 .link {
+    /* Define a largura e altura do botão/link e centraliza */
     width: 95%;
     max-width: 480px;
     height: 55px;
     display: flex; 
     background-color: rgba(15, 15, 15, 0.8); 
     border-radius: 10px;
-    flex-direction: column;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
     justify-content: center;
+
+    /* Estilo do botão/link */
     text-align: left;
-    text-decoration: none;
+    text-decoration: none; /* Remove a decoração do texto */
     font-size: 20px;
-    text-indent: 16px;
+    text-indent: 16px; /* Adiciona espaço ao início do texto */
     color: white;
 }
 
 .link:hover {
+    /* Altera a cor de fundo e aumenta a largura e fonte ao passar o mouse */
     background-color: rgba(122, 122, 122, 0.5);
     width: 97%;
     font-size: 23px;
@@ -44,11 +53,15 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.texto {
+#textoSobre {
+    font-size: 18px;
     text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.texto {
+    text-align: left;
     font-size: 20px;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
 }
-
-
