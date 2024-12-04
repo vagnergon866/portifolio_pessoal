@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form class="formCenter">
+    <form class="formMenu">
+        <h1 id="textoTitulo">Vagner Gonçalves</h1>
+        <a href="sobre.html" class="linkInterno">Sobre mim</a>
+        <a href="formacao.html" class="linkInterno">Formação</a>
+        <a href="portifolio.html" class="linkInterno">Portfólio</a>
+        <a href="contato.html" class="linkInterno">Contato</a>
+    </form>
+    <form class="formItem">
         <br><br><br><br>
         <h1 id="textoTitulo">Contato</h1>
-        <br><br><br><br>  
-            <a href="https://www.linkedin.com/in/vagner-gon%C3%A7alves-38267221b/" target="_blank" class="link" >Linkedin</a>
+        <br><br><br><br>
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="botao">Enviar</button>
     </form>
 </body>
 </html>

@@ -1,55 +1,101 @@
-body{
+body {
     /* Define a imagem de fundo e ajusta para para que cubra toda a tela */
     background-image: url(imagens/folha.jpg);
     background-size: cover;
-    display: flex; 
+    display: flex;
 
     /* Centraliza o conteúdo na vertical e horizontalmente */
-    justify-content: center; 
-    align-items: center;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0; 
     height: 100vh; 
 }
 
-.formCenter {
-    /* Define o tamanho fixo do formulário */
-    width: 480px; 
-    height: 650px; 
-
-    /* Cor de fundo com tranparencia e bordas arredondadas */
-    background-color: rgb(31, 31, 31, 0.8); 
-    border-radius: 20px;  
+.formMenu {
+    /* Estilo para o formulário menu no topo da página */
+    width: 100%;
+    height: 100px; 
+    background-color: rgba(31, 31, 31, 0.8); 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;; 
+    position: fixed;
+    top: 0;
+    z-index: 10; 
 }
 
-.link {
-    /* Define a largura e altura do botão/link e centraliza */
+.formItem {
+    /* Estilo para o formulário de itens na parte inferior da página */
+    width: 90%; 
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(31, 31, 31, 0.8); 
+    border-radius: 20px; 
+    position: absolute; 
+    bottom: 20px; 
+}
+
+.linkInterno { 
+    /* Estilo para os links internos */
+    width: 15%;
+    max-width: 480px;
+    height: 55px;
+    display: flex; 
+    background-color: rgba(15, 15, 15, 0.8); 
+    border-radius: 10px;
+    flex-direction: column; 
+    justify-content: center;
+
+    /* Estilo do botão/link */
+    margin-right: 18px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.linkExterno {  
+    /* Estilo para os links externos */
     width: 95%;
     max-width: 480px;
     height: 55px;
     display: flex; 
     background-color: rgba(15, 15, 15, 0.8); 
     border-radius: 10px;
-    flex-direction: column; /* Organiza o conteúdo em coluna */
+    flex-direction: column;
     justify-content: center;
 
     /* Estilo do botão/link */
     text-align: left;
-    text-decoration: none; /* Remove a decoração do texto */
+    text-decoration: none;
     font-size: 20px;
-    text-indent: 16px; /* Adiciona espaço ao início do texto */
+    text-indent: 16px; 
     color: white;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.link:hover {
-    /* Altera a cor de fundo e aumenta a largura e fonte ao passar o mouse */
+.linkInterno:hover {
+    /* Efeito para links internos */
     background-color: rgba(122, 122, 122, 0.5);
-    width: 97%;
-    font-size: 23px;
+    font-size: 24px;
+}
+
+.linkExterno:hover {
+    /* Efeito para links externos */
+    background-color: rgba(122, 122, 122, 0.5);
+    font-size: 24px;
+    text-align: center;
 }
 
 #textoTitulo {
+    margin-left: 18px;
     text-align: center;
     font-size: 35px;
-    color: white;
+    text-indent: 5px;
+    color: rgb(255, 255, 255);
     font-family:Arial, Helvetica, sans-serif;
 }
 
